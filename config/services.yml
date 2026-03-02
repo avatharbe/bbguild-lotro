@@ -1,0 +1,11 @@
+services:
+    avathar.bbguild_lotro.installer:
+        class: avathar\bbguild_lotro\game\lotro_installer
+
+    avathar.bbguild_lotro.provider:
+        class: avathar\bbguild_lotro\game\lotro_provider
+        arguments:
+            - '@avathar.bbguild_lotro.installer'
+            - '@ext.manager'
+        tags:
+            - { name: bbguild.game_provider }
