@@ -27,7 +27,7 @@
     "version-check": {
       "host": "www.avathar.be",
       "directory": "/versioncheck",
-      "filename": "bbguild_lotro.json",
+      "filename": "bbguild-lotro.json",
       "ssl": true
     }
   }
