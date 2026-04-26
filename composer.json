@@ -1,5 +1,5 @@
 {
-  "name": "avathar/bbguild-lotro",
+  "name": "avathar/bbguildlotro",
   "type": "phpbb-extension",
   "description": "Lord of the Rings Online game plugin for bbGuild. Provides LOTRO classes, races, and factions.",
   "homepage": "https://github.com/avandenberghe/bbguild",
@@ -27,7 +27,7 @@
     "version-check": {
       "host": "www.avathar.be",
       "directory": "/versioncheck",
-      "filename": "bbguild-lotro.json",
+      "filename": "bbguildlotro.json",
       "ssl": true
     }
   }

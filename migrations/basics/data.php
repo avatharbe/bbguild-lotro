@@ -5,12 +5,12 @@
  * Seeds Lord of the Rings Online factions, classes, races, and roles
  * by calling the existing installer service.
  *
- * @package   avathar\bbguild_lotro
+ * @package   avathar\bbguildlotro
  * @copyright 2018 avathar.be
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  */
 
-namespace avathar\bbguild_lotro\migrations\basics;
+namespace avathar\bbguildlotro\migrations\basics;
 
 class data extends \phpbb\db\migration\container_aware_migration
 {
@@ -80,7 +80,7 @@ class data extends \phpbb\db\migration\container_aware_migration
 
 	private function get_installer()
 	{
-		return new \avathar\bbguild_lotro\game\lotro_installer(
+		return new \avathar\bbguildlotro\game\lotro_installer(
 			$this->container->get('dbal.conn'),
 			$this->container->get('cache.driver'),
 			$this->container->get('config'),

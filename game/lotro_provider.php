@@ -2,12 +2,12 @@
 /**
  * LOTRO Game Provider
  *
- * @package   bbguild_lotro v2.0
+ * @package   bbguildlotro v2.0
  * @copyright 2018 avathar.be
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  */
 
-namespace avathar\bbguild_lotro\game;
+namespace avathar\bbguildlotro\game;
 
 use avathar\bbguild\model\games\game_provider_interface;
 use avathar\bbguild\model\games\game_install_interface;
@@ -54,7 +54,7 @@ class lotro_provider implements game_provider_interface
 
 	public function get_images_path(): string
 	{
-		return $this->ext_manager->get_extension_path('avathar/bbguild_lotro', true) . 'images/';
+		return $this->ext_manager->get_extension_path('avathar/bbguildlotro', true) . 'images/';
 	}
 
 	public function has_api(): bool

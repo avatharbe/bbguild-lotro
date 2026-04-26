@@ -5,11 +5,11 @@
  * @license GNU General Public License, version 2 (GPL-2.0)
  */
 
-namespace avathar\bbguild_lotro\tests\game;
+namespace avathar\bbguildlotro\tests\game;
 
 use PHPUnit\Framework\TestCase;
-use avathar\bbguild_lotro\game\lotro_provider;
-use avathar\bbguild_lotro\game\lotro_installer;
+use avathar\bbguildlotro\game\lotro_provider;
+use avathar\bbguildlotro\game\lotro_installer;
 
 class lotro_provider_test extends TestCase
 {
@@ -28,7 +28,7 @@ class lotro_provider_test extends TestCase
 			->disableOriginalConstructor()
 			->getMock();
 		$ext_manager->method('get_extension_path')
-			->willReturn('ext/avathar/bbguild_lotro/');
+			->willReturn('ext/avathar/bbguildlotro/');
 
 		$this->provider = new lotro_provider($installer, $ext_manager);
 	}
@@ -56,7 +56,7 @@ class lotro_provider_test extends TestCase
 
 	public function test_images_path(): void
 	{
-		$this->assertStringContainsString('bbguild_lotro', $this->provider->get_images_path());
+		$this->assertStringContainsString('bbguildlotro', $this->provider->get_images_path());
 		$this->assertStringEndsWith('images/', $this->provider->get_images_path());
 	}
 

@@ -8,21 +8,21 @@
  * Release 2.0.0-a1 version stamp
  */
 
-namespace avathar\bbguild_lotro\migrations\v200a1;
+namespace avathar\bbguildlotro\migrations\v200a1;
 
 class release_2_0_0_a1 extends \phpbb\db\migration\migration
 {
 	public static function depends_on()
 	{
 		return [
-			'\avathar\bbguild_lotro\migrations\basics\data',
+			'\avathar\bbguildlotro\migrations\basics\data',
 		];
 	}
 
 	public function effectively_installed()
 	{
-		return isset($this->config['bbguild_lotro_version'])
-			&& version_compare($this->config['bbguild_lotro_version'], '2.0.0-a1', '>=');
+		return isset($this->config['bbguildlotro_version'])
+			&& version_compare($this->config['bbguildlotro_version'], '2.0.0-a1', '>=');
 	}
 
 	public function update_data()
@@ -35,12 +35,12 @@ class release_2_0_0_a1 extends \phpbb\db\migration\migration
 	public function revert_data()
 	{
 		return [
-			['config.remove', ['bbguild_lotro_version']],
+			['config.remove', ['bbguildlotro_version']],
 		];
 	}
 
 	public function set_version()
 	{
-		$this->config->set('bbguild_lotro_version', '2.0.0-a1');
+		$this->config->set('bbguildlotro_version', '2.0.0-a1');
 	}
 }
