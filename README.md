@@ -1,4 +1,5 @@
 # bbGuild - Lord of the Rings Online
+[![Tests](https://github.com/avatharbe/bbguild_lotro/actions/workflows/tests.yml/badge.svg)](https://github.com/avatharbe/bbguild_lotro/actions/workflows/tests.yml)
 
 Game plugin that adds Lord of the Rings Online support to [bbGuild](https://github.com/avandenberghe/bbguild).
 
